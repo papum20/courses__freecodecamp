@@ -1,0 +1,56 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-color {
+	margin: 0;
+	padding: 0;
+	background-color: #0000aaaa;
+}
+
+/* STRUCTURE */
+
+.div-title {
+	background-color: darkgreen;
+	color: white;
+}
+
+.panel-form {
+	background-color: #000055aa;
+}
+
+/* ELEMENTS */
+
+.newline {
+	display: inline-block;
+}
+
+.newline label {
+	background-color: darkmagenta;
+}
+.newline input, select, textarea {
+	display: block;
+}
+
+.label-question {
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+}
+
+.checkbox-vertical label {
+	display: block;
+}
+
+.textarea textarea {
+	width: 80%;
+}
