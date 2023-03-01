@@ -5,6 +5,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	border: 0;
 	background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -13,44 +14,79 @@ body {
 
 .background-color {
 	margin: 0;
-	padding: 0;
-	background-color: #0000aaaa;
+	padding: 2rem;
+	padding-bottom: 0;
+	background-color: #3c3caeaa;
 }
 
 /* STRUCTURE */
 
 .div-title {
-	background-color: darkgreen;
 	color: white;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.div-title h1, p {
+	margin: 0;
+	margin-bottom: .5rem;
+	text-align: center;
 }
 
 .panel-form {
-	background-color: #000055aa;
+	background-color: #0a0a26aa;
 }
 
 /* ELEMENTS */
 
 .newline {
-	display: inline-block;
+	display: block;
+	height: 100%;
+	width: 100%;
 }
 
-.newline label {
-	background-color: darkmagenta;
+.fieldset-width {
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	width: 80%;
 }
-.newline input, select, textarea {
+.form-width {
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	margin-top: .2rem;
+	margin-bottom: .5rem;
 }
+
 
 .label-question {
 	display: inline-block;
 	margin-top: 1em;
 	margin-bottom: 0.2em;
+	color: white;
+}
+.text-secondary {
+	font-size: .8rem;
+	color: white;
 }
 
 .checkbox-vertical label {
 	display: block;
+	margin: .1rem;
+	color: white;
 }
 
-.textarea textarea {
-	width: 80%;
+.textarea-comment {
+	min-height: 4rem;
+}
+
+input[type="submit"] {
+	display: block;
+	height: 2em;
+	min-width: 100px;
+	border: 0;
+	font-size: 1.1rem;
+	background-color: #237d0a;
 }
