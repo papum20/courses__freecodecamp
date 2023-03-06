@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+	* {
+		scroll-behavior: smooth;
+	}
+}
+
 #logo {
 	width: max(100px, 18vw);
 	padding: 0.4rem;
@@ -21,23 +27,44 @@ main {
 	padding-top: 25px;
 }
 
+footer {
+	background-color: #2a2a40;
+	display: flex;
+	justify-content: center;
+}
+footer, footer a {
+	color: #dfdfe2;	
+}
+
 h1 {
 	color: #f1be32;
 	font-size: min(5vw, 1.2em);
 	text-align: center;
 }
 h2 {
+	margin-top: 0;
 	border-bottom: 4px solid #dfdfe2;
+	padding-top: 60px;
 }
 h1, h2 {
 	font-family: Verdana, sans-serif;
+}
+p {
+	margin-top: 5px;
+	padding-left: 15px;
+	font-size: 20px;
 }
 p::before {
 	content: "Question #";
 }
 
 nav > ul {
+	height: 100%;
+	margin-block: 0;
+	padding-inline-start: 0;
 	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 nav li {
@@ -54,6 +81,70 @@ nav li:hover {
 	background-color: #dfdfe2;
 	color: #1b1b32;
 	cursor: pointer;
+}
+
+section {
+	width: 80%;
+	max-width: 600px;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+input {
+	font-size: 16;
+}
+
+.info {
+	padding: 10px 0 0 5px;
+}
+.info input {
+	width: 50%;
+	text-align: left;
+}
+.info label {
+	width: 10%;
+	min-width: 55px;
+}
+.info input, .info label {
+	display: inline-block;
+	text-align: right;
+}
+
+.question {
+	border: none;
+	padding-bottom: 0;
+}
+.question-block {
+	width: 100%;
+	margin-top: 20px;
+	padding-top: 5px;
+	text-align: left;
+	display: block;
+}
+.answers-list {
+	padding: 0;
+	list-style: none;
+}
+
+.formrow {
+	margin: 10px 0 0 0;
+	padding: 0 10px 0 10px;
+}
+
+button {
+	width: 40%;
+	margin: 40px auto;
+	border: 3px solid #3b3b4f;
+	padding: 15px;
+	background: #d0d0d5;
+	font-size: 23px;
+	display: block;
+}
+
+address {
+	padding: 5px;
+	text-align: center;
 }
 
 .sr-only {
