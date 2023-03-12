@@ -65,6 +65,71 @@ section {
 .table-wrap {
 	padding: 0 0.75rem 1.5rem 0.75rem;
 }
-span {
+
+table {
+	width: 100%;
+	position: relative;
+	margin-top: 3rem;
+	border: 0;
+	border-collapse: collapse;
+}
+table caption {
+	position: absolute;
+	top: -2.25rem;
+	left: 0.5rem;
+	color: #356eaf;
+	font-size: 1.3em;
 	font-weight: normal;
+}
+tbody th {
+	width: calc(100% - 12rem);	
+}
+tbody td {
+	width: 100vw;
+	min-width: 4rem;
+	max-width: 4rem;
+}
+tr[class="total"] {
+	border-bottom: 4px double #0a0a23;
+	font-weight: bold;
+}
+tr[class="total"] th {
+	padding: 0.5rem 0 0.25rem 0.5rem;
+	text-align: left;
+}
+tr.total:hover {
+background-color: #99c9ff;
+}
+tr.total td {
+	padding: 0 0.25rem;
+	text-align: right;
+}
+tr.total td:nth-of-type(3) {
+	padding-right: 0.5rem;
+}
+td.current {
+	font-style: italic;
+}
+tr.data {
+	background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+tr.data th {
+	padding-top: 0.3rem;
+	padding-left: 0.5rem;
+	text-align: left;
+}
+tr.data th .description {
+	margin-right: -13.5rem;
+	padding: 1rem 0 0.75rem;
+	display: block;
+	font-style: italic;
+	font-weight: normal;
+}
+tr.data td {
+	padding: 0.3rem 0.25rem 0;
+	text-align: right;
+	vertical-align: top;
+}
+tr.data td:last-of-type {
+	padding-right: 0.5rem;
 }
